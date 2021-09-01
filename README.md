@@ -6,7 +6,8 @@ A mod for the game [Baby Coyote]
 
 ## Install
 
-Extract into the game folder. `doorstop_config.ini`, `version.dll` and the `mod` sub-folder must be in the same folder as `Baby Coyote.exe`.
+Download the [latest release] and extract into the game folder. `doorstop_config.ini`, `version.dll` and the `mod`
+sub-folder must end up in the same folder as `Baby Coyote.exe`.
 
 The mod remains disabled by default. To enable it, either
 - edit `doorstop_config.ini` and replace `enabled=false` with `enabled=true` or
@@ -16,6 +17,7 @@ Edit `mod.config` to enable or disable the features you want.
 
 The mod uses the [Doorstop] and [HarmonyX] libraries to inject code into the game without modifying game files.
 
+[latest release]: https://github.com/kalimag/BabyCoyote-Mod/releases
 [Doorstop]: https://github.com/NeighTools/UnityDoorstop/
 [HarmonyX]: https://github.com/BepInEx/HarmonyX/
 
