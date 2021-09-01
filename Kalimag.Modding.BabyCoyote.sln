@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kalimag.Modding.BabyCoyote.Mod", "src\Kalimag.Modding.BabyCoyote.Mod\Kalimag.Modding.BabyCoyote.Mod.csproj", "{A1FD394D-A409-49F8-9758-8AE819E3ED58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1FD394D-A409-49F8-9758-8AE819E3ED58}.Debug|x64.ActiveCfg = Debug|x64
+		{A1FD394D-A409-49F8-9758-8AE819E3ED58}.Debug|x64.Build.0 = Debug|x64
+		{A1FD394D-A409-49F8-9758-8AE819E3ED58}.Release|x64.ActiveCfg = Release|x64
+		{A1FD394D-A409-49F8-9758-8AE819E3ED58}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5943DE98-179B-4E03-801E-8161910506F7}
+	EndGlobalSection
+EndGlobal
