@@ -33,6 +33,9 @@ namespace Kalimag.Modding.BabyCoyote.Mod.Components
             if (Input.GetKeyDown(KeyCode.F9))
                 UseTeleport();
 
+            if (Input.GetKeyDown(KeyCode.P))
+                Time.timeScale = Time.timeScale != 0 ? 0 : 1;
+
             if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl))
             {
                 if (Input.GetKeyDown(KeyCode.I))

@@ -19,7 +19,7 @@ namespace Kalimag.Modding.BabyCoyote.Mod.Components
         private CinemachineVirtualCamera freeCamera;
         private GameObject followTarget;
         private float moveSpeedMult = 1;
-        private bool cameraDeathplaneDisabled;
+        private bool preparedForCamera;
 
         private void Start()
         {
@@ -71,8 +71,8 @@ namespace Kalimag.Modding.BabyCoyote.Mod.Components
 
         private void EnableFreeCamera()
         {
-            if (!cameraDeathplaneDisabled)
-                DisableCameraDeathplane();
+            if (!preparedForCamera)
+                PrepareForCamera();
 
             freeCamera.enabled = true;
         }
@@ -118,7 +118,7 @@ namespace Kalimag.Modding.BabyCoyote.Mod.Components
             followTarget.transform.localPosition = Vector3.zero;
         }
 
-        private void DisableCameraDeathplane()
+        private void PrepareForCamera()
         {
             var deathplanes = GameObject.FindGameObjectsWithTag("FallDector");
             bool anyFound = false;
@@ -134,7 +134,11 @@ namespace Kalimag.Modding.BabyCoyote.Mod.Components
             if (anyFound)
                 ModController.AddNotification("Disabled deathplane attached to camera");
 
-            cameraDeathplaneDisabled = true;
+            var brain = FindObjectOfType<CinemachineBrain>();
+            if (brain)
+                brain.m_IgnoreTimeScale = true;
+
+            preparedForCamera = true;
         }
 
 

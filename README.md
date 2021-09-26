@@ -57,6 +57,7 @@ not inject code or contain any other changes.
 | Left shift     | Fly upwards                                    | Cheats                      |
 | H              | Restore health                                 | Cheats                      |
 | Ctrl+I         | Toggle invincibility (damage and death planes) | Cheats                      |
+| P              | Pause game (without menu)                      | Cheats                      |
 | Numpad +       | Zoom camera in                                 | Camera                      |
 | Numpad -       | Zoom camera out                                | Camera                      |
 | Numpad 2/4/6/8 | Move camera                                    | Camera                      |
