@@ -45,8 +45,7 @@ namespace Kalimag.Modding.BabyCoyote.Mod
             RootObject = new GameObject("Mod Root Object");
             UnityEngine.Object.DontDestroyOnLoad(RootObject);
 
-            if (Config.GUI)
-                UI = RootObject.AddComponent<Components.UIComponent>();
+            UI = RootObject.AddComponent<Components.UIComponent>();
             if (Config.Cheats)
                 RootObject.AddComponent<Components.CheatComponent>();
             if (Config.Visuals)

@@ -50,7 +50,7 @@ namespace Kalimag.Modding.BabyCoyote.Mod
                 ApplyPatches<Patches.QuickRetryPatches>();
             if (config.Cheats)
                 ApplyPatches<Patches.CheatPatches>();
-            if (config.GUI && config.LevelReachedNotification)
+            if (config.LevelReachedNotification)
                 ApplyPatches<Patches.LevelReachedPatches>();
 
             void ApplyPatches<T>() => harmony.CreateClassProcessor(typeof(T)).Patch();

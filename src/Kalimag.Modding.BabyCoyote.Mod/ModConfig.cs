@@ -20,7 +20,6 @@ namespace Kalimag.Modding.BabyCoyote.Mod
             nameof(AllowCutsceneSkipping), nameof(ImproveCutscenePlayback), nameof(RestoreCutscenes)
         };
 
-        public bool GUI { get; private set; }
         public bool LevelReachedNotification { get; private set; }
         public float NotificationDisplayTime { get; private set; }
 

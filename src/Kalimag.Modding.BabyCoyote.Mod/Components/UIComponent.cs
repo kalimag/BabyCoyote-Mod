@@ -1,4 +1,6 @@
-﻿using System;
+﻿extern alias GameScripts;
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -32,10 +34,8 @@ namespace Kalimag.Modding.BabyCoyote.Mod.Components
 
         private void DrawVersionGUI()
         {
-            if (DisplayVersion)
-            {
+            if (DisplayVersion || GameScripts.PauseMenu.GameIsPaused)
                 GUI.Label(Screen.safeArea, versionString, Styles.VersionLabel);
-            }
         }
 
         private void DrawNotificationGUI()
